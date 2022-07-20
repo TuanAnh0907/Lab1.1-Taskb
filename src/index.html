@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header class="mx-10 ">
+        <div class="inline-flex justify-between w-full ">
+            <nav class="bg-white">
+                <div id="dropdown-wrapper" class="relative">
+
+                    <button onclick="toggleMenu()" class="py-3 inline-block">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                        <p class="text-xl inline-block p-3"> SECTIONS </p>
+                    </button>
+
+                    <div id="menu" class="hidden flex flex-initial bg-white drop-shadow-md absolute">
+                        <a class="px-5 py-3 hover:bg-slate-500 border-b border-gray-200 " href="#">Home</a>
+                        <a class="px-5 py-3 hover:bg-slate-500 border-b border-gray-200" href="#">World</a>
+                        <a class="px-5 py-3 hover:bg-slate-500 border-b border-gray-200" href="#">Politics</a>
+                        <a class="px-5 py-3 hover:bg-slate-500 border-b border-gray-200" href="#">Business</a>
+
+                        <a class="px-5 py-3 hover:bg-slate-500 border-b border-gray-200" href="#">Tech</a>
+                        <a class="px-5 py-3 hover:bg-slate-500 border-b border-gray-200" href="#">Science</a>
+                        <a class="px-5 py-3 hover:bg-slate-500 border-b border-gray-200" href="#">Heath</a>
+                        <a class="px-5 py-3 hover:bg-slate-500 border-b border-gray-200" href="#">Sport</a>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="text-center text-gray-400 text-xl py-5">
+                Friday, February 24, 2017
+            </div>
+
+            <div class="text-right py-5 inline-block">
+                <i class="fa-solid fa-magnifying-glass fa-2x  "></i>
+                <input class="w-32 h-10 placeholder-px-4 focus:outline p-2" type="search" size="20"
+                    placeholder="SEARCH">
+                <button class="bg-sport w-20 h-10">Log in</button>
+            </div>
+        </div>
+
+        <div class="text-8xl w-full h-auto text-center py-3 inline-block">
+            <p class="text-center"> <b>The News</b> </p>
+        </div>
+
+        <div class="menu  inline-block text-center w-full border-t border-b border-gray-300 my-3 py-3 ">
+            <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">World</a>
+            <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Politics</a>
+            <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Business</a>
+            <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Opinion</a>
+            <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Tech</a>
+            <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Science</a>
+            <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Heath</a>
+            <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Sport</a>
+            <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Entertaiment</a>
+            <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Travel</a>
+            <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200 " href="#">More</a>
+            <a class="px-5 text-xl hover:bg-slate-300 border-gray-200 float-right text-blue-500 pr-10" href="#"><i
+                    class="fas fa-newspaper fa-1x mx-2 text-blue-600"></i>E-PAPER</a>
+        </div>
+
+    </header>
+
+    <div class="grid grid-cols-4 gap-3 mx-10 my-3 ">
+
+        <div class="col-span-2 bg-cover bg-no-repeat bg-center h-108 w-full relative bg-[url('../image/hot.png')]">
+            <div class="text-black absolute -bottom-10 left-5 bg-white text-4xl font-serif pl-10 font-semibold pr-5">
+                What One Photo Tells Us About North <br> Korea’s Nuclear Program
+            </div>
+            <p class="text-xl text-slate-800 absolute -bottom-28 left-0 pl-5">
+                Clues from a propaganda photo reveal details about North Korea’s expanding weapons programs
+                and
+                internal politics.
+            </p>
+        </div>
+
+        <div class="px-3">
+
+            <h2 class="bg-yellow text-2xl px-3 py-1 w-44 h-9"> TOP STORIES </h2>
+
+            <div class="px-3 py-5 hover:shadow-md text-xl border-b border-gray-300">
+                <a href="#">PM unveils Shiva status in Coimbatore on Mahashivratri</a>
+            </div>
+            <div class="px-3 py-5 hover:shadow-md text-xl border-b border-gray-300">
+                <a href="#">PM unveils Shiva status in Coimbatore on Mahashivratri</a>
+            </div>
+            <div class="px-3 py-5 hover:shadow-md text-xl border-b border-gray-300">
+                <a href="#">PM unveils Shiva status in Coimbatore on Mahashivratri</a>
+            </div>
+            <div class="px-3 py-5 hover:shadow-md text-xl border-b border-gray-300">
+                <a href="#">PM unveils Shiva status in Coimbatore on Mahashivratri</a>
+            </div>
+            <div class="px-3 py-5 hover:shadow-md text-xl border-b border-gray-300">
+                <a href="#">PM unveils Shiva status in Coimbatore on Mahashivratri</a>
+            </div>
+            <div class="px-3 py-5 hover:shadow-md text-xl">
+                <a href="#">PM unveils Shiva status in Coimbatore on Mahashivratri</a>
+            </div>
+
+        </div>
+
+        <div class="mx-3">
+            <div class="py-2 text-xl">
+
+                <div class="px-5 bg-gray-sl">
+                    <h2 class="bg-yellow text-2xl w-40 h-9 py-1 text-center "> QUICK BITES </h2>
+
+                    <div class="py-6 hover:shadow-md text-3xl ">
+                        <a href="#">
+                            <p> <b> Stocks Sell Off, Gold Ries Ahead of Trump Speech: Markets Wrap </b></p>
+                        </a>
+                    </div>
+
+                    <h3>Golbal stocks retreated, erasing gains for the week as a glum set of
+                        European corporate earnings compouded investor nerousness before a major speech
+                        from U.S.President Donald Trump. Gold extended its rally as the dollar edged lower.
+                    </h3>
+
+                    <div class="pt-3 text-right px-4">
+                        <a href="">
+                            <p class="text-blue-600"> <b>Next ></b> </p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="pt-8">  
+                    <a href="" class="text-blue-600">
+                        <p> <b> Get the Quick Bites delivered to your inbox daily </b> </p>
+                    </a>
+                    <div class="border-b border-blue-600 my-6 inline-flex">
+                        <input class="w-full xxl:w-56" type="text" placeholder="Enter your email">
+                        <a href="#" type="submit" class="float-right">
+                            <p class="bg-blue-600 text-white h-8 w-28 text-center">Sign Up</p>  
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="grid grid-cols-4 gap-2 mx-10 my-4">
+
+        <div class="col-span-3 border-t border-b border-gray-300 py-6">
+
+            <div class=" text-center justify-between inline-flex w-full my-2">
+                <div class="bg-sport w-36 mx-1 h-auto text-2xl "><a href="#"> FEATURE </a></div>
+                <div class="bg-gray-sl text-xl text-center mr-12">Mahashivratri symbolizes a union of divinity with a
+                    purpore of overcoming darkness and injustice.</div>
+                <div class=" text-blue-500 text-xl"><a href="">View all</a></div>
+            </div>
+
+            <div class="grid grid-cols-3 my-2">
+                <div class=" bg-cover bg-no-repeat bg-centerh-96 w-96 h-52 bg-[url('../image/pic1.png')]">
+                    <div class="bg-white text-xl mt-44 ml-5 pl-5 w-72 absolute h-8  z-10">
+                        <p> Woman Do Like to Compete Against Themselves </p>
+                    </div>
+                </div>
+                <div class=" bg-cover bg-no-repeat bg-centerh-96 w-96 h-52 bg-[url('../image/pic2.png')]">
+                    <div class="bg-white text-xl mt-44 ml-5 pl-5 w-72 absolute h-8  z-10">
+                        <p> Vijay Mallya, the fugitive supposed to be part of  </p>
+                    </div>
+                </div>
+                <div class=" bg-cover bg-no-repeat bg-centerh-96 w-96 h-52 bg-[url('../image/pic3.png')]">
+                    <div class="bg-white text-xl mt-44 ml-5 pl-5 w-72 absolute h-8  z-10">
+                        <p> Women Do Like to Compete Against Themselves </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-1 ml-5 mt-10 ">
+            <div class=" relative bg-cover bg-no-repeat bg-centerh-96 w-96 h-64 bg-[url('../image/video.png')]">
+                
+                <div class="text-white w-64 mt-44 ml-6 text-2xl absolute"> <b> Watch Modi live from G8 Summit</b> </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="grid grid-cols-5 gap-2 ml-10 my-3 h-auto ">
+
+        <div class="col-span-1 mx-5 ">
+            <div class="bg-sport w-32 h-8 py-1 my-4 text-center">
+                <p> WORLD NEWS </p>
+            </div>
+            <div class="my-8 text-2xl"><b>An Alarmed Base Prods Democrats Into an All-Out War</b></div>
+            <h2 class="my-6">After the election, Democrats debated whether to confront Mr.
+                Trump or seek compromise, but riled-up liberals have pushed party leaders into a fight.</h2>
+
+            <h1 class="text-2xl my-6 py-3 border-t border-dashed border-gray-300"> <b>Transgender Student on the Front
+                    Lines of the Rights Battle </b> </h1>
+            <h2 class="">Gavin Grimm, 17, whose initials are on a case heading to the Supreme Court, has become the new
+                face of the transgender rights movement.</h2>
+        </div>
+
+        <div class="col-span-2 border-l border-gray-300 my-4">
+            <div class="px-3 ml-3 mb-3 ">
+                <h2 class="text-2xl"> <b> Hate Crime Is Feared in Shooting of 2 Indians in Kansas </b> </h2>
+                <div class="grid grid-cols-2 py-3 gap-14 border-b border-dashed border-gray-300">
+                    <p>India’s government expressed shock after one citizen was killed and another wounded in a bar in
+                        suburban Kansas. Another wounded in a bar in suburban Kansas.</p>
+                    <img src="../image/avt.png" alt="" class="w-56 h-36 text-right">
+                </div>
+            </div>
+            <div class="px-3 ml-3 mb-5 ">
+                <h2 class="text-2xl"> <b> Uber Lawsuit Puts Spotlight on Rush for Driverless Cars </b> </h2>
+                <p class="border-b border-dashed py-3 border-gray-300">The suit, brought by the autonomous car business Waymo,
+                    accuses Uber and a star engineer, Anthony Levandowski, of planning to steal trade secrets.</p>
+            </div>
+            <br>
+            <div class="px-3 ml-3 mb-5 ">
+                <h2 class="text-2xl"> <b>Hate Crime Is Feared in Shooting of 2 Indians in Kansas </b> </h2>
+                <div class="grid grid-cols-2 py-3 gap-14 border-b border-dashed border-gray-300">
+                    <p>India’s government expressed shock after one citizen was killed and another wounded in a bar in
+                        suburban Kansas. Another wounded in a bar in suburban Kansas.</p>
+                    <img src="../image/avt2.png" alt="" class="w-56 h-36 text-right">
+                </div>
+            </div>
+            <div class="px-3 ml-3 mb-5">
+                <h2 class="text-2xl"> <b> Uber Lawsuit Puts Spotlight on Rush for Driverless Cars </b> </h2>
+                <p>The suit, brought by the autonomous car business Waymo, accuses Uber and a star engineer, Anthony
+                    Levandowski, of planning to steal trade secrets.</p>
+            </div>
+
+        </div>
+
+        <div class="col-span-1 mx-4 px-4 border-r border-l border-gray-300">
+            <div class="bg-yellow w-36 h-8 py-1 my-4 text-center">ENTERTAIMENT</div>
+            <div class="py-3 border-b border-dashed border-gray-300">Kangana sad that her 'Rangoon' scenes were cut bycensorbourd</div>
+            <div class="py-3 border-b border-dashed border-gray-300">Kajol-Ajay celebrate 18th wedding anniversary in Paris</div>
+            <div class="py-3 border-b border-dashed border-gray-300">Shahid wishes he was offered this Aamir Khan’s film last year!</div>
+            <div class="py-3 border-b border-dashed border-gray-300">Lipstick Under My Burkha: CBFC defends its move of banning the film</div>
+            <div class="py-3 border-b border-dashed border-gray-300">Varun-Alia’s new song ‘Aashiq Surrender Hua’ is out on YouTube</div>
+            <div class="py-3 border-b border-dashed border-gray-300">‘Jolly LLB 2’ box-office collection week 2</div>
+            <div class="py-3 border-b border-dashed border-gray-300">Casting Ouch! The open dirty secret of showbiz culture in Bollywood</div>
+            <div class="py-3 border-b border-dashed border-gray-300"> Student arrested for the murder of model turned teacher</div>
+            <div class="py-3 ">Shahid wishes he was offered this Aamir Khan’s film last year!</div>
+
+        </div>
+
+        <div class="col-span-1 mr-10 w-72">
+            <div class="bg-sport w-32 h-8 py-1 my-4 text-center">SPORTS NEWS</div>
+            <div class="py-3 text-2xl"><b>COA wants all BCCI bodies to produce compliance report</b></div>
+            <div class="py-3 border-b border-dashed border-gray-300 my-8">After the election, Democrats debated whether to confront
+                Mr. Trump or seek compromise, but riled-up liberals have pushed party leaders into a fight.</div>
+            <img class="py-3" src="../image/sport.png" alt="">
+            <div class="py-3 text-2xl border-b border-gray-300"><b>Series win in Australia hugely satisfying: Upul
+                    Tharanga</b></div>
+        </div>
+
+    </div>
+
+    <div class="grid grid-cols-5 gap-2 mx-10 my-3 h-auto border-b border-gray">
+
+        <div class="col-span-4">
+
+            <div class="bg-sport w-full h-10 inline-flex justify-between">
+                <div>
+                    <p class="px-5 py-2 ">Videos</p>
+                </div>
+
+                <div>
+                    <a href="">
+                        <p class="px-5 py-2 text-blue-500"><b> View all Videos </b></p>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-4 gap-2 h-160 ">
+
+                <div class="col-span-3 my-8 border-r border-gray-300">
+                    <div class="w-11/12 mx-6 text-center inline-flex justify-between ">
+                        <div><a href="">
+                                <p>Trending</p>
+                            </a></div>
+                        <div><a href="">
+                                <p>News</p>
+                            </a></div>
+                        <div><a href="">
+                                <p>Entertainment</p>
+                            </a></div>
+                        <div><a href="">
+                                <p>Celebs</p>
+                            </a></div>
+                        <div><a href="">
+                                <p>Movie</p>
+                            </a></div>
+                        <div><a href="">
+                                <p>Lifestyle</p>
+                            </a></div>
+                        <div><a href="">
+                                <p>Sports</p>
+                            </a></div>
+                        <div><a href="">
+                                <p>Tech</p>
+                            </a></div>
+                        <div><a href="">
+                                <p>Business</p>
+                            </a></div>
+                        <div><a href="">
+                                <p>Auto</p>
+                            </a></div>
+                    </div>
+
+                    <div class="mx-6 py-4 ">
+                        <p class="absolute pt-108 ml-36 w-160 text-4xl text-white ">Isro launches 104 satellites in a
+                            single mission to create world record</p>
+                        <img src="../image/menu-img.png" alt="" class="w-260 h-144">
+                    </div>
+
+                </div>
+
+                <div class="col-span-1 overflow-auto my-2 mt-8">
+
+                    <div class="w-80 h-56 relative">
+                        <p class="absolute text-white text-xl mt-20 w-72 mx-3">Isro launches 104 satellites in a single
+                            mission </p>
+                        <img src="../image/menu-img1.png" alt="">
+                    </div>
+
+                    <div class=" w-80 h-56 relative">
+                        <p class="absolute text-white text-xl mt-20 w-72 mx-3">Isro launches 104 satellites in a single
+                            mission </p>
+                        <img src="../image/menu-img2.png" alt="">
+                    </div>
+
+                    <div class=" w-80 h-56 relative">
+                        <p class="absolute text-white text-xl mt-20 w-72 mx-3">Isro launches 104 satellites in a single
+                            mission </p>
+                        <img src="../image/menu-img3.png" alt="">
+                    </div>
+
+                    <div class=" w-80 h-56 relative">
+                        <p class="absolute text-white text-xl mt-20 w-72 mx-3">Isro launches 104 satellites in a single
+                            mission </p>
+                        <img src="../image/menu-img1.png" alt="">
+                    </div>
+
+                    <div class=" w-80 h-56 relative">
+                        <p class="absolute text-white text-xl mt-20 w-72 mx-3">Isro launches 104 satellites in a single
+                            mission </p>
+                        <img src="../image/menu-img2.png" alt="">
+                    </div>
+
+                    <div class=" w-80 h-56 relative">
+                        <p class="absolute text-white text-xl mt-20 w-72 mx-3">Isro launches 104 satellites in a single
+                            mission </p>
+                        <img src="../image/menu-img3.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-5 gap-2 my-10 py-10">
+                <div class="w-64 h-48">
+                    <img src="../image/img-sub/img1.png" alt="">
+                    <h3 class="text-2xl py-5"><b>The Intimate Lens of Ed van der Elsken</b></h3>
+                    <p class="text-xl pb-10">Two European museums are presenting retrospectives of a man many consider
+                        to be one of the best street photographers of the 20th century.</p>
+                </div>
+
+                <div class="w-64 h-48">
+                    <img src="../image/img-sub/img2.png" alt="">
+                    <h3 class="text-2xl py-5"><b>Gauging the Art Market’s Health</b></h3>
+                    <p class="text-xl pb-10">Auctions of Impressionist, modern and Surrealist art at Sotheby’s and
+                        Christie’s will be the first major test of buoyancy since the inauguration in the U.S.</p>
+                </div>
+
+                <div class="w-64 h-48">
+                    <img src="../image/img-sub/img3.png" alt="">
+                    <h3 class="text-2xl py-5"><b>What happen when you skip breakfast</b></h3>
+                    <p class="text-xl pb-10">The old saying, ‘Eat breakfast like a king, lunch like a prince and dinner
+                        like a pauper’ couldn’t ring truer. Beginning your day with a heavy breakfast.</p>
+                </div>
+
+                <div class="w-64 h-48">
+                    <img src="../image/img-sub/img4.png" alt="">
+                    <h3 class="text-2xl py-5"><b>In London, the Rise of Old-Fashioned </b></h3>
+                    <p class="text-xl pb-10">Two European museums are presenting retrospectives of a man many consider
+                        to be one of the best street photographers of the 20th century.</p>
+                </div>
+
+                <div class="w-64 h-48">
+                    <img src="../image/img-sub/img5.png" alt="">
+                    <h3 class="text-2xl py-5"><b>T6 myths about keeping an aquarium</b></h3>
+                    <p class="text-xl pb-10">Keeping fish in aquariums is a hobby which is quite common. People are
+                        often very apprehensive about keeping fish and having an aquarium.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-span-1 mx-5">
+            <div class="bg-yellow w-36 h-8 py-1 my-4 text-center">MOST POPULAR</div>
+
+            <div class="hover:shadow-md text-xl border-b border-dashed border-gray-300 ">
+                <div class="absolute text-8xl text-lammo text-roboto">1</div>
+                <div class="pl-10 py-5 relative">
+                    <a href="#">5 buyout candidates the Celtics could target after quiet trade deadline</a>
+                </div>
+            </div>
+            <div class="hover:shadow-md text-xl border-b border-dashed border-gray-300">
+                <div class="absolute text-8xl text-lammo text-roboto">2</div>
+                <div class="pl-10 py-5 relative">
+                    <a href="#">White House bars major news outlets from media gaggle</a>
+                </div>
+            </div>
+            <div class="hover:shadow-md text-xl border-b border-dashed  border-gray-300">
+                <div class="absolute text-8xl text-lammo text-roboto">3</div>
+                <div class="pl-10 py-5 relative">
+                    <a href="#">Watch the removal of a Jeep buried in a Cape Cod sand dune for 40 years</a>
+                </div>
+            </div>
+            <div class="hover:shadow-md text-xl border-b border-dashed border-gray-300">
+                <div class="absolute text-8xl text-lammo text-roboto">4</div>
+                <div class="pl-10 py-5 relative">
+                    <a href="#">2nd suspect arrested in gruesome Peabody double killing</a>
+                </div>
+            </div>
+            <div class="hover:shadow-md text-xl border-b border-dashed border-gray-300">
+                <div class="absolute text-8xl text-lammo text-roboto">5</div>
+                <div class="pl-10 py-5 relative">
+                    <a href="#">6 charged in death of UConn student run over after party</a>
+                </div>
+            </div>
+            <div class="hover:shadow-md text-xl border-b border-dashed border-gray-300">
+                <div class="absolute text-8xl text-lammo text-roboto">6</div>
+                <div class="pl-10 py-5 relative">
+                    <a href="#">Derek Jeter loves watching this Red Sox player play</a>
+                </div>
+            </div>
+            <div class="hover:shadow-md text-xl border-b border-dashed border-gray-300">
+                <div class="absolute text-8xl text-lammo text-roboto">7</div>
+                <div class="pl-10 py-5 relative">
+                    <a href="#">5 buyout candidates the Celtics could target after quiet trade deadline</a>
+                </div>
+            </div>
+            <div class="hover:shadow-md text-xl">
+                <div class="absolute text-8xl text-lammo text-roboto">8</div>
+                <div class="pl-10 py-5 relative">
+                    <a href="#">White House bars major news outlets from media gaggle</a>
+                </div>
+            </div>
+            <div class="hover:shadow-md text-xl border-b border-dashed border-gray-300">
+                <div class="absolute text-8xl text-lammo text-roboto">9</div>
+                <div class="pl-10 py-5 relative">
+                    <a href="#">Watch the removal of a Jeep buried in a Cape Cod sand dune for 40 years</a>
+                </div>
+            </div>
+            <div class="hover:shadow-md text-xl ">
+                <div class="absolute text-8xl text-lammo text-roboto">10</div>
+                <div class="pl-10 py-5 relative">
+                    <a href="#">2nd suspect arrested in gruesome Peabody double killing</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="inline-flex justify-between mx-36 my-5">
+            <div class="px-2 text-gray"><i class="fa-solid fa-copyright"></i><b> 2017 The Telegraph Company </b></div>
+            <div class="px-2 text-gray border-l border-gray-300">Contact Us</div>
+            <div class="px-2 text-gray border-l border-gray-300">Work With Us</div>
+            <div class="px-2 text-gray border-l border-gray-300">Advertise</div>
+            <div class="px-2 text-gray border-l border-gray-300">Your Ad Choices</div>
+            <div class="px-2 text-gray border-l border-gray-300">Privacy</div>
+            <div class="px-2 text-gray border-l border-gray-300">Terms of Sale</div>
+            <div class="px-2 text-gray border-l border-gray-300">Site Information</div>
+            <div class="px-2 text-gray border-l border-gray-300">Navigation</div>
+            <div class="px-2 text-gray border-l border-gray-300">Site Map</div>
+            <div class="px-2 text-gray border-l border-gray-300">HelpSite</div>
+            <div class="px-2 text-gray border-l border-gray-300">Feedback</div>
+            <div class="px-2 text-gray border-l border-gray-300">Subscriptions</div>
+        </div>
+    </footer>
+
+
+    <script src="./js/all.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                        'vs': '320px',
+                        'sm': '640px',
+                        'md': '768px',
+                        'lg': '1024px',
+                        'xl': '1280px',
+                        '2xl': '1536px',
+                },
+                colors: {
+                    'gray': '#979797',
+                    'gray-sl': '#F5F5F5',
+
+                    'yellow': '#FBFF22',
+                    'sport': '#E2E2E2',
+                    'lammo': '#F5F5F5',
+                },
+                fontFamily: {
+                    roboto: ["Roboto", "sans-serif"],
+                },
+                extend: {
+                    // backgroundImage: {
+                    //     'hots': "url('../image/')",
+                    // },
+                    spacing: {
+                        '50': '12.5rem',
+                        '76': '19rem',
+                        '100': '25rem',
+                        '108': '27rem',
+                        '112': '28rem',
+                        '120': '30rem',
+                        '128': '32rem',
+                        '144': '36rem',
+                        '148': '37rem',
+                        '160': '40rem',
+                        '260': '65rem',
+                    }
+                },
+                borderRadius: {
+                    '4xl': '2rem',
+                },
+            }
+        }
+    </script>
+</body>
+
+</html>
