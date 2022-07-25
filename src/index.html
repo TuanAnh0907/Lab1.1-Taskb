@@ -26,14 +26,15 @@
 
 <body>
 
-    <header class="mx-10 mb-4 font-roboto ">
+    <header class="lg:mx-10 lg:mb-4 font-roboto ">
         <div class="inline-flex justify-between w-full lg:border-b border-gray-300 border-dashed ">
-            <nav class="bg-white">
+
+            <nav class="bg-white px-3 py-1">
                 <div id="dropdown-wrapper" class="relative">
-                    <button onclick="toggleMenu()" class="pt-3 inline-block">
+                    <button onclick="toggleMenu()" class="lg:pt-3 inline-block">
                         <div class="text-gray">
                             <i class="fa-solid fa-bars fa-2x text-gray"></i>
-                            <p class="text-2xl text-black tracking-tightest font-black hidden lg:inline-block lg:p-3">
+                            <p class="text-2xl text-black tracking-tightest font-black hidden lg:inline-block ">
                                 SECTIONS </p>
                         </div>
                     </button>
@@ -53,26 +54,26 @@
                 </div>
             </nav>
 
-            <div class="text-center text-gray-400 lg:text-xl lg:pt-5">
+            <div class="text-center text-gray-400 py-1 lg:text-xl lg:pt-5">
                 <p class="hidden lg:block">Friday, February 24, 2017</p>
-                <p class="h-auto w-full text-center text-black text-5xl mg:py-3 lg:hidden font-bitter"><b> The News </b>
+                <p class="h-auto w-full text-center text-black text-2xl mg:py-3 lg:hidden font-bitter"><b> The News </b>
                 </p>
             </div>
 
-            <div class="py-3 lg:text-right lg:py-5 lg:inline-block">
+            <div class="lg:text-right py-1 px-3 lg:py-5 lg:inline-block">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input class="hidden placeholder-px-4 focus:outline border-none lg:w-36 lg:h-10 lg:inline-block"
                     type="search" size="20" placeholder="SEARCH">
                 <button class="bg-sport hidden lg:inline-block lg:w-24 lg:h-10">Log in</button>
             </div>
+
         </div>
 
         <div class=" w-full h-auto text-center lg:text-8xl lg:pt-3 lg:inline-block">
             <p class=" mt-5 text-center tetx-bitter hidden lg:block"> <b>The News</b> </p>
         </div>
 
-        <div
-            class="menu text-center w-full border-t border-b border-gray-300 lg:my-3 lg:py-3 hidden lg:inline-block">
+        <div class="menu text-center w-full border-t border-b border-gray-300 lg:my-3 lg:py-3 hidden lg:inline-block">
             <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200 " href="#">World</a>
             <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Politics</a>
             <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Business</a>
@@ -84,19 +85,20 @@
             <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Entertaiment</a>
             <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200" href="#">Travel</a>
             <a class="px-5 pt-3 text-xl hover:bg-slate-300 border-gray-200 " href="#">More</a>
-            <a class="px-5 text-xl hover:bg-slate-300 border-gray-200 float-right text-blue-500 pr-10" href="#"></a>
-            <a class="text-blue-600" href=""><i class="fas fa-newspaper fa-1x mx-2 text-blue-600"></i>E-PAPER</a>
+            <a class="px-5 text-xl hover:bg-slate-300 border-gray-200 float-right text-blue-500 pr-10" href="#"><i
+                    class="fas fa-newspaper fa-1x mx-2 text-blue-600"></i>E-PAPER</a>
         </div>
 
     </header>
 
     <div class="font-roboto">
-        <div class="lg:grid lg:grid-cols-4 lg:gap-3 mx-10 lg:my-3 my-10 ">
+
+        <div class="lg:grid lg:grid-cols-4 lg:gap-3 lg:mx-10 lg:my-3 mx-3 my-10 ">
 
             <div
                 class=" lg:my-5 col-span-2 bg-cover bg-no-repeat bg-center h-108 w-full relative bg-[url('../image/hot.png')]">
                 <div
-                    class="text-black absolute bg-white font-serif w-3/4 pl-10 font-semibold pr-5 text-2xl -bottom-5 lg:text-4xl lg:-bottom-10">
+                    class="text-black absolute bg-white font-serif w-5/6 lg:w-3/4 ml-4 pl-2 lg:pl-10 lg:pr-5 text-xl lg:text-4xl -bottom-5 lg:-bottom-10 ">
                     What One Photo Tells Us About North <br> Korea’s Nuclear Program
                 </div>
                 <p class="text-xl text-slate-800 absolute -bottom-44 lg:-bottom-32 left-0 pl-5 hidden lg:block">
@@ -108,49 +110,52 @@
 
             <div class="lg:px-3 lg:col-span-1 lg:py-2 py-10">
                 <div class="inline-flex justify-between w-full">
-                    <p class="bg-yellow text-2xl px-3 my-3 py-1 w-44 h-9"> TOP STORIES </p>
-                    <p class=" text-2xl pt-4 text-blue-500 lg:hidden inline-block"> View all </p>
+                    <p class="text-sm lg:text-2xl px-3 my-3 py-2 h-9 lg:h-11 bg-yellow"> TOP STORIES </p>
+                    <p class="text-sm lg:text-2xl pt-4 text-blue-500 lg:hidden inline-block"> View all </p>
                 </div>
 
-                <div class="px-3 py-3 hover:shadow-md text-xl border-dashed border-b border-gray">
+                <div class="px-3 py-3 hover:shadow-md lg:text-xl border-dashed border-b border-gray">
                     <a href="#">PM unveils Shiva status in Coimbatore on Mahashivratri</a>
                 </div>
-                <div class="px-3 py-3 hover:shadow-md text-xl border-dashed border-b border-gray">
+                <div class="px-3 py-3 hover:shadow-md lg:text-xl border-dashed border-b border-gray">
                     <a href="#">PM Modi: Kanpur train accident was a conspiracy</a>
                 </div>
-                <div class="px-3 py-3 hover:shadow-md text-xl border-dashed border-b border-gray">
+                <div class="px-3 py-3 hover:shadow-md lg:text-xl border-dashed border-b border-gray">
                     <a href="#">‘Sena, BJP have no option but to join hands again’</a>
                 </div>
-                <div class="px-3 py-3 hover:shadow-md text-xl border-dashed border-b border-gray">
+                <div class="px-3 py-3 hover:shadow-md lg:text-xl border-dashed border-b border-gray">
                     <a href="#">Thousands bid adieu to martyred jawan in Kashmir</a>
                 </div>
-                <div class="px-3 py-3 hover:shadow-md text-xl border-dashed border-b border-gray hidden lg:block">
+                <div class="px-3 py-3 hover:shadow-md lg:text-xl border-dashed border-b border-gray hidden lg:block">
                     <a href="#">Jayalalithaa’s niece Deepa floats political outfit</a>
                 </div>
-                <div class="px-3 py-3 hover:shadow-md text-xl border-dashed border-b border-gray hidden lg:block">
+                <div class="px-3 py-3 hover:shadow-md lg:text-xl border-dashed border-b border-gray hidden lg:block">
                     <a href="#">‘China made mistake of ignoring India’s talent’</a>
                 </div>
-                <div class="px-3 py-3 hover:shadow-md text-xl border-dashed hidden lg:block">
+                <div class="px-3 py-3 hover:shadow-md lg:text-xl border-dashed hidden lg:block">
                     <a href="#">Jayalalithaa’s niece Deepa floats political outfit</a>
                 </div>
 
             </div>
 
             <div class="lg:mx-3">
+
                 <div class="py-2 text-xl">
 
                     <div class="bg-gray-sl relative">
-                        <h2 class="bg-yellow text-2xl w-40 h-9 my-2 py-1 -top-5 text-center lg:static absolute">
+
+                        <h2
+                            class="bg-yellow text-center text-sm lg:text-2xl w-32 lg:w-48 h-9 lg:h-11 px-3 my-2 py-2 -top-5 absolute lg:static">
                             QUICK BITES </h2>
 
-                        <div class="px-5 py-10 lg:py-3 hover:shadow-md text-3xl ">
+                        <div class="px-5 py-10 lg:py-3 hover:shadow-md text-xl lg:text-3xl ">
                             <a href="#">
                                 <p class="font-merriweather"> <b> Stocks Sell Off, Gold Ries Ahead of Trump Speech:
                                         Markets Wrap </b></p>
                             </a>
                         </div>
 
-                        <h3 class="px-5">Golbal stocks retreated, erasing gains for the week as a glum set of
+                        <h3 class="px-5 py-1">Golbal stocks retreated, erasing gains for the week as a glum set of
                             European corporate earnings compouded investor nerousness before a major speech
                             from U.S.President Donald Trump. Gold extended its rally as the dollar edged lower.
                         </h3>
@@ -163,7 +168,7 @@
 
                     </div>
 
-                    <div class="pt-2 xl:block :hidden">
+                    <div class="pt-2 xl:block hidden">
                         <a href="" class="text-blue-600 font-merriweather">
                             <p> <b> Get the Quick Bites delivered to your inbox daily </b> </p>
                         </a>
@@ -181,12 +186,11 @@
 
         </div>
 
-        <div class="lg:grid lg:grid-cols-4 lg:gap-2 lg:mx-10 ml-10 mt-4 ">
+        <div class="lg:grid lg:grid-cols-4 lg:gap-2 mx-2 lg:mx-10 lg:ml-10 mt-4 ">
 
-            <div class="lg:col-span-4 2xl:col-span-3 lg:border-t lg:border-b border-gray-300 my-6 w-full">
+            <div class="lg:col-span-4 2xl:col-span-3 lg:border-t lg:border-b border-gray-300 lg:my-6 lg:w-full">
 
-                <div
-                    class=" text-center justify-between inline-flex w-full mt-2 border-b lg:border-b-0 border-sport">
+                <div class=" text-center justify-between inline-flex w-full mt-2 border-b lg:border-b-0 border-sport">
 
                     <div class="bg-sport w-36 h-auto text-2xl "><a href="#"> FEATURE </a></div>
 
@@ -197,24 +201,28 @@
 
                 </div>
 
-                <div class="overflow-auto text-center font-merriweather inline-flex justify-between pt-4 h-72 w-full">
+                <div
+                    class="overflow-auto text-center font-merriweather inline-flex justify-between lg:pt-4 h-76 lg:h-72 lg:w-full">
 
                     <div class="relative flex-shrink-0 mr-3">
-                        <p class="bg-white text-xl mt-48 mx-6 pl-5 w-80 absolute">Woman Do Like to Compete Against
+                        <p class="bg-white text-lg lg:text-xl mt-48 mx-6 lg:pl-5 lg:w-80 absolute">Woman Do Like to
+                            Compete Against
                             Themselves</p>
-                        <img src="../image/pic1.png" alt="" class="h-60 w-auto">
+                        <img src="../image/pic1.png" alt="" class="h-52 lg:h-60 w-auto">
                     </div>
 
                     <div class="relative flex-shrink-0 mr-3">
-                        <p class="bg-white text-xl mt-48 mx-6 pl-5 w-80 absolute">Woman Do Like to Compete Against
+                        <p class="bg-white text-lg lg:text-xl mt-48 mx-6 lg:pl-5 lg:w-80 absolute">Woman Do Like to
+                            Compete Against
                             Themselves</p>
-                        <img src="../image/pic2.png" alt="" class="h-60 w-auto">
+                        <img src="../image/pic2.png" alt="" class="h-52 lg:h-60 w-auto">
                     </div>
 
                     <div class="relative flex-shrink-0 ">
-                        <p class="bg-white text-xl mt-48 mx-6 pl-5 w-80 absolute">Woman Do Like to Compete Against
+                        <p class="bg-white text-lg lg:text-xl mt-48 mx-6 lg:pl-5 lg:w-80 absolute">Woman Do Like to
+                            Compete Against
                             Themselves</p>
-                        <img src="../image/pic3.png" alt="" class="h-60 w-auto">
+                        <img src="../image/pic3.png" alt="" class="h-52 lg:h-60 w-auto">
                     </div>
                 </div>
             </div>
@@ -242,53 +250,69 @@
 
         </div>
 
-        <div class="lg:grid lg:grid-cols-5 lg:gap-2 ml-10 my-2 h-auto ">
+        <div class="lg:grid lg:grid-cols-5 lg:gap-2 lg:ml-10 ml-3 my-2 h-auto ">
 
-            <div class="lg:col-span-1 mx-5 border-none lg:boder-b lg:border-none border-gray">
+            <div class="lg:col-span-1 mx-1 lg:mx-5 border-none lg:boder-b lg:border-none border-gray">
+
                 <div class="bg-sport w-32 h-8 py-1 my-4 text-center">
                     <p> WORLD NEWS </p>
                 </div>
-                <div class="my-3 text-2xl font-merriweather"><b>An Alarmed Base Prods Democrats Into an All-Out War</b>
+
+                <div class="lg:my-3 lg:text-2xl font-merriweather"><b>An Alarmed Base Prods Democrats Into an All-Out
+                        War</b>
                 </div>
+
                 <h2 class="my-6 text-xl">After the election, Democrats debated whether to confront Mr.
                     Trump or seek compromise, but riled-up liberals have pushed party leaders into a fight.</h2>
+
                 <div class="border-t lg:border-none border-dashed border-gray-300 w-1/4"></div>
-                <h1 class="text-2xl my-6 py-3 font-merriweather"> <b>Transgender Student on the Front
+
+                <h1 class=" text-xl lg:text-2xl my-6 py-3 font-merriweather"> <b>Transgender Student on the Front
                         Lines of the Rights Battle </b> </h1>
                 <h2 class="text-xl">Gavin Grimm, 17, whose initials are on a case heading to the Supreme Court, has
                     become the new
                     face of the transgender rights movement.</h2>
             </div>
-            <div class="lg:col-span-2 lg:border-l border-gray-300 my-4">
-                <div class="px-3 ml-3 mb-3 ">
-                    <h2 class="text-2xl font-merriweather"> <b> Hate Crime Is Feared in Shooting of 2 Indians in Kansas
+
+            <div class="lg:col-span-2 lg:border-l border-gray-300 py-2 my-4">
+
+                <div class="px-2 my-4 lg:ml-3 mb-3 ">
+                    <h2 class="lg:text-2xl font-merriweather"> <b> Hate Crime Is Feared in Shooting of 2 Indians in
+                            Kansas
                         </b> </h2>
-                    <div class="py-3 gap-14 border-b border-dashed border-gray-300 inline-flex">
+                    <div class="py-3 gap-3 border-b border-dashed border-gray-300 inline-flex">
                         <p class="text-xl">India’s government expressed shock after one citizen was killed and another
                             wounded in a bar in
                             suburban Kansas. Another wounded in a bar in suburban Kansas.</p>
-                        <img src="../image/avt.png" alt="" class="w-56 h-36 text-right">
+                        <img src="../image/avt.png" alt="" class="w-36 h-24 text-right">
                     </div>
                 </div>
-                <div class="px-3 py-3image.pngimage.png ml-3 mb-5 hidden lg:block">
-                    <h2 class="text-2xl font-merriweather"> <b> Uber Lawsuit Puts Spotlight on Rush for Driverless Cars
+
+                <div class="lg:px-3 py-3 ml-3 lg:mb-5 hidden lg:block">
+                    <h2 class="lg:text-2xl font-merriweather"> <b> Uber Lawsuit Puts Spotlight on Rush for Driverless
+                            Cars
                         </b> </h2>
-                    <p class="border-b border-dashed py-3 border-gray-300 text-xl">The suit, brought by the autonomous
+                    <p class="border-b border-dashed py-3 border-gray-300 text-lg lg:text-xl">The suit, brought by the
+                        autonomous
                         car business Waymo,
                         accuses Uber and a star engineer, Anthony Levandowski, of planning to steal trade secrets.</p>
                 </div>
+
                 <br>
-                <div class="px-3 ml-3 mb-5 ">
-                    <h2 class="text-2xl font-merriweather"> <b>Hate Crime Is Feared in Shooting of 2 Indians in Kansas
+
+                <div class="px-3 lg:ml-3 lg:mb-5 ">
+                    <h2 class="lg:text-2xl font-merriweather"> <b>Hate Crime Is Feared in Shooting of 2 Indians in
+                            Kansas
                         </b> </h2>
-                    <div class="py-3 gap-14 border-b border-dashed border-gray-300 inline-flex">
+                    <div class="py-3 gap-3 border-b border-dashed border-gray-300 inline-flex">
                         <p class="text-xl">India’s government expressed shock after one citizen was killed and another
                             wounded in a bar in
                             suburban Kansas. Another wounded in a bar in suburban Kansas.</p>
-                        <img src="../image/avt2.png" alt="" class="w-56 h-36 text-right">
+                        <img src="../image/avt2.png" alt="" class="w-36 h-24 text-right">
                     </div>
                 </div>
-                <div class="px-3 ml-3 mb-5 hidden lg:block">
+
+                <div class="px-3 lg:ml-3 mb-5 hidden lg:block">
                     <h2 class="text-2xl"> <b> Uber Lawsuit Puts Spotlight on Rush for Driverless Cars </b> </h2>
                     <p class="text-xl">The suit, brought by the autonomous car business Waymo, accuses Uber and a star
                         engineer, Anthony
@@ -332,22 +356,23 @@
                     <p class="lg:block hidden">SPORTS NEWS</p>
                     <p class="lg:hidden">WORLD NEWS</p>
                 </div>
-                <div class="pt-3 text-2xl font-merriweather"><b>COA wants all BCCI bodies to produce compliance
+                <div class="pt-3 text-xl lg:text-2xl font-merriweather"><b>COA wants all BCCI bodies to produce
+                        compliance
                         report</b>
                 </div>
-                <div class="pt-2 my-8 text-xl">After the election, Democrats debated whether to confront
+                <div class="pt-2 my-8 text-lg lg:text-xl">After the election, Democrats debated whether to confront
                     Mr. Trump or seek compromise, but riled-up liberals have pushed party leaders into a fight.
                 </div>
                 <div class="w-full border-b border-dashed border-gray"></div>
                 <div class="inline-flex lg:block py-2">
-                    <img class="pt-2 w-60 h-44 lg:w-full lg:h-48" src="../image/sport.png" alt="">
-                    <div class="py-2 px-9 font-merriweather w-1/2 lg:w-full lg:px-0 text-2xl border-0 lg:border-b border-gray-300">
+                    <img class="pt-2 w-36 gap-5 h-24 lg:w-full lg:h-48" src="../image/sport.png" alt="">
+                    <div
+                        class="py-2 px-6 font-merriweather w-1/2 lg:w-full lg:px-0 text-lg lg:text-2xl border-0 lg:border-b border-gray-300">
                         <b>Series win in Australia hugely satisfying:
                             <br>Upul Tharanga</b>
                     </div>
                 </div>
             </div>
-
         </div>
 
 
@@ -372,7 +397,7 @@
                     class="xl:grid xl:grid-cols-4 xl:gap-2 lg:mb-3 lg:h-168 lg:border-b lg:border-dashed lg:border-l lg:border-gray-300">
 
                     <div class="4xl:col-span-3 lg:col-span-4 my-8 border-r border-gray-300 ">
-                        
+
                         <ul class="tabs w-11/12 mx-6 text-center justify-around hidden lg:inline-flex">
                             <li data-tab-target="#trending" class="tab active">Trending</li>
                             <li data-tab-target="#news" class="tab ">News</li>
@@ -385,173 +410,189 @@
                             <li data-tab-target="#business" class="tab ">Business</li>
                             <li data-tab-target="#auto" class="tab ">Auto</li>
                         </ul>
-                        
+
                         <div class="tab-content mx-5">
+
                             <div id="trending" data-tab-content class="active">
                                 <div class="py-4 flex-shrink-0 relative">
                                     <div
-                                        class="absolute left-14 lg:left-8 top-64 lg:top-112 text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
+                                        class="absolute left-2 lg:left-8 top-40 lg:top-112 lg:text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
                                         <i class="fa-solid fa-play"></i>
                                     </div>
                                     <p
-                                        class="absolute lg:pt-108 pt-60 ml-36 lg:w-168 w-96 lg:text-4xl text-xl text-white font-merriweather">
+                                        class="absolute pt-32 lg:pt-96 ml-20 lg:ml-36 lg:w-128 text-sm lg:text-4xl text-white font-merriweather">
                                         Isro launches 104 satellites in a
                                         single mission to create world record</p>
                                     <p
-                                        class="absolute lg:pt-128 pt-80 ml-36 lg:w-160 w-108 lg:text-2xl text-base text-white ">
+                                        class="absolute pt-44 lg:pt-128 ml-20 lg:ml-36 lg:w-108 lg:text-2xl text-sm text-white ">
                                         2:30 | By Telegraph</p>
-                                    <img src="../image/tenlua.png" alt="" class="2xl:w-256 lg:h-144 w-full h-full">
+                                    <img src="../image/tenlua.png" alt=""
+                                        class="2xl:w-256 lg:h-144 lg:w-full lg:h-full">
                                 </div>
                             </div>
-                            <div id="news" data-tab-content>
-                                <div class="ml-6 py-4 flex-shrink-0 relative">
-                                    <div
-                                        class="absolute left-14 lg:left-8 top-52 lg:top-112 text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
-                                        <i class="fa-solid fa-play"></i>
-                                    </div>
-                                    <p
-                                        class="absolute lg:pt-108 pt-48 ml-36 lg:w-168 w-80 lg:text-4xl text-xl text-white font-merriweather">
-                                        Isro launches 104 satellites in a
-                                        single mission to create world record</p>
-                                    <p
-                                        class="absolute lg:pt-128 pt-64 ml-36 lg:w-160 w-108 lg:text-2xl text-base text-white ">
-                                        2:30 | By Telegraph</p>
-    
-                                    <img src="../image/tongthong.png" alt="" class="2xl:w-256 lg:h-144 w-full h-full">
-                                </div>
-                            </div>
-                            <div id="entertainment" data-tab-content>
+
+                            <div id="news" data-tab-content class="">
                                 <div class="py-4 flex-shrink-0 relative">
                                     <div
-                                        class="absolute left-14 lg:left-8 top-52 lg:top-112 text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
+                                        class="absolute left-2 lg:left-8 top-40 lg:top-112 lg:text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
                                         <i class="fa-solid fa-play"></i>
                                     </div>
                                     <p
-                                        class="absolute lg:pt-108 pt-48 ml-36 lg:w-168 w-80 lg:text-4xl text-xl text-white font-merriweather">
+                                        class="absolute pt-32 lg:pt-96 ml-20 lg:ml-36 lg:w-128 text-sm lg:text-4xl text-white font-merriweather">
                                         Isro launches 104 satellites in a
                                         single mission to create world record</p>
                                     <p
-                                        class="absolute lg:pt-128 pt-64 ml-36 lg:w-160 w-108 lg:text-2xl text-base text-white ">
+                                        class="absolute pt-44 lg:pt-128 ml-20 lg:ml-36 lg:w-108 lg:text-2xl text-sm text-white ">
                                         2:30 | By Telegraph</p>
-                                    <img src="../image/tenlua.png" alt="" class="2xl:w-256 lg:h-144 w-full h-full">
+                                    <img src="../image/tongthong.png" alt=""
+                                        class="2xl:w-256 lg:h-144 lg:w-full lg:h-full">
                                 </div>
                             </div>
-                            <div id="celebs" data-tab-content >
-                                <div class="ml-6 py-4 flex-shrink-0 relative">
-                                    <div
-                                        class="absolute left-14 lg:left-8 top-52 lg:top-112 text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
-                                        <i class="fa-solid fa-play"></i>
-                                    </div>
-                                    <p
-                                        class="absolute lg:pt-108 pt-48 ml-36 lg:w-168 w-80 lg:text-4xl text-xl text-white font-merriweather">
-                                        Isro launches 104 satellites in a
-                                        single mission to create world record</p>
-                                    <p
-                                        class="absolute lg:pt-128 pt-64 ml-36 lg:w-160 w-108 lg:text-2xl text-base text-white ">
-                                        2:30 | By Telegraph</p>
-    
-                                    <img src="../image/tongthong.png" alt="" class="2xl:w-256 lg:h-144 w-full h-full">
-                                </div>
-                            </div>
-                            <div id="movie" data-tab-content>
+
+                            <div id="entertainment" data-tab-content class="">
                                 <div class="py-4 flex-shrink-0 relative">
                                     <div
-                                        class="absolute left-14 lg:left-8 top-52 lg:top-112 text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
+                                        class="absolute left-2 lg:left-8 top-40 lg:top-112 lg:text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
                                         <i class="fa-solid fa-play"></i>
                                     </div>
                                     <p
-                                        class="absolute lg:pt-108 pt-48 ml-36 lg:w-168 w-80 lg:text-4xl text-xl text-white font-merriweather">
+                                        class="absolute pt-32 lg:pt-96 ml-20 lg:ml-36 lg:w-128 text-sm lg:text-4xl text-white font-merriweather">
                                         Isro launches 104 satellites in a
                                         single mission to create world record</p>
                                     <p
-                                        class="absolute lg:pt-128 pt-64 ml-36 lg:w-160 w-108 lg:text-2xl text-base text-white ">
+                                        class="absolute pt-44 lg:pt-128 ml-20 lg:ml-36 lg:w-108 lg:text-2xl text-sm text-white ">
                                         2:30 | By Telegraph</p>
-                                    <img src="../image/tenlua.png" alt="" class="2xl:w-256 lg:h-144 w-full h-full">
+                                    <img src="../image/tenlua.png" alt=""
+                                        class="2xl:w-256 lg:h-144 lg:w-full lg:h-full">
                                 </div>
                             </div>
-                            <div id="lifestyle" data-tab-content>
-                                <div class="ml-6 py-4 flex-shrink-0 relative">
-                                    <div
-                                        class="absolute left-14 lg:left-8 top-52 lg:top-112 text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
-                                        <i class="fa-solid fa-play"></i>
-                                    </div>
-                                    <p
-                                        class="absolute lg:pt-108 pt-48 ml-36 lg:w-168 w-80 lg:text-4xl text-xl text-white font-merriweather">
-                                        Isro launches 104 satellites in a
-                                        single mission to create world record</p>
-                                    <p
-                                        class="absolute lg:pt-128 pt-64 ml-36 lg:w-160 w-108 lg:text-2xl text-base text-white ">
-                                        2:30 | By Telegraph</p>
-    
-                                    <img src="../image/tongthong.png" alt="" class="2xl:w-256 lg:h-144 w-full h-full">
-                                </div>
-                            </div>
-                            <div id="sports" data-tab-content >
+
+                            <div id="celebs" data-tab-content class="">
                                 <div class="py-4 flex-shrink-0 relative">
                                     <div
-                                        class="absolute left-14 lg:left-8 top-52 lg:top-112 text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
+                                        class="absolute left-2 lg:left-8 top-40 lg:top-112 lg:text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
                                         <i class="fa-solid fa-play"></i>
                                     </div>
                                     <p
-                                        class="absolute lg:pt-108 pt-48 ml-36 lg:w-168 w-80 lg:text-4xl text-xl text-white font-merriweather">
+                                        class="absolute pt-32 lg:pt-96 ml-20 lg:ml-36 lg:w-128 text-sm lg:text-4xl text-white font-merriweather">
                                         Isro launches 104 satellites in a
                                         single mission to create world record</p>
                                     <p
-                                        class="absolute lg:pt-128 pt-64 ml-36 lg:w-160 w-108 lg:text-2xl text-base text-white ">
+                                        class="absolute pt-44 lg:pt-128 ml-20 lg:ml-36 lg:w-108 lg:text-2xl text-sm text-white ">
                                         2:30 | By Telegraph</p>
-                                    <img src="../image/tenlua.png" alt="" class="2xl:w-256 lg:h-144 w-full h-full">
+                                    <img src="../image/tongthong.png" alt=""
+                                        class="2xl:w-256 lg:h-144 lg:w-full lg:h-full">
                                 </div>
                             </div>
-                            <div id="tech" data-tab-content>
-                                <div class="ml-6 py-4 flex-shrink-0 relative">
-                                    <div
-                                        class="absolute left-14 lg:left-8 top-52 lg:top-112 text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
-                                        <i class="fa-solid fa-play"></i>
-                                    </div>
-                                    <p
-                                        class="absolute lg:pt-108 pt-48 ml-36 lg:w-168 w-80 lg:text-4xl text-xl text-white font-merriweather">
-                                        Isro launches 104 satellites in a
-                                        single mission to create world record</p>
-                                    <p
-                                        class="absolute lg:pt-128 pt-64 ml-36 lg:w-160 w-108 lg:text-2xl text-base text-white ">
-                                        2:30 | By Telegraph</p>
-    
-                                    <img src="../image/tongthong.png" alt="" class="2xl:w-256 lg:h-144 w-full h-full">
-                                </div>
-                            </div>
-                            <div id="business" data-tab-content>
+
+                            <div id="sports" data-tab-content class="">
                                 <div class="py-4 flex-shrink-0 relative">
                                     <div
-                                        class="absolute left-14 lg:left-8 top-52 lg:top-112 text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
+                                        class="absolute left-2 lg:left-8 top-40 lg:top-112 lg:text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
                                         <i class="fa-solid fa-play"></i>
                                     </div>
                                     <p
-                                        class="absolute lg:pt-108 pt-48 ml-36 lg:w-168 w-80 lg:text-4xl text-xl text-white font-merriweather">
+                                        class="absolute pt-32 lg:pt-96 ml-20 lg:ml-36 lg:w-128 text-sm lg:text-4xl text-white font-merriweather">
                                         Isro launches 104 satellites in a
                                         single mission to create world record</p>
                                     <p
-                                        class="absolute lg:pt-128 pt-64 ml-36 lg:w-160 w-108 lg:text-2xl text-base text-white ">
+                                        class="absolute pt-44 lg:pt-128 ml-20 lg:ml-36 lg:w-108 lg:text-2xl text-sm text-white ">
                                         2:30 | By Telegraph</p>
-                                    <img src="../image/tenlua.png" alt="" class="2xl:w-256 lg:h-144 w-full h-full">
+                                    <img src="../image/tenlua.png" alt=""
+                                        class="2xl:w-256 lg:h-144 lg:w-full lg:h-full">
                                 </div>
                             </div>
-                            <div id="auto" data-tab-content>
-                                <div class="ml-6 py-4 flex-shrink-0 relative">
+
+                            <div id="lifestyle" data-tab-content class="">
+                                <div class="py-4 flex-shrink-0 relative">
                                     <div
-                                        class="absolute left-14 lg:left-8 top-52 lg:top-112 text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
+                                        class="absolute left-2 lg:left-8 top-40 lg:top-112 lg:text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
                                         <i class="fa-solid fa-play"></i>
                                     </div>
                                     <p
-                                        class="absolute lg:pt-108 pt-48 ml-36 lg:w-168 w-80 lg:text-4xl text-xl text-white font-merriweather">
+                                        class="absolute pt-32 lg:pt-96 ml-20 lg:ml-36 lg:w-128 text-sm lg:text-4xl text-white font-merriweather">
                                         Isro launches 104 satellites in a
                                         single mission to create world record</p>
                                     <p
-                                        class="absolute lg:pt-128 pt-64 ml-36 lg:w-160 w-108 lg:text-2xl text-base text-white ">
+                                        class="absolute pt-44 lg:pt-128 ml-20 lg:ml-36 lg:w-108 lg:text-2xl text-sm text-white ">
                                         2:30 | By Telegraph</p>
-    
-                                    <img src="../image/tongthong.png" alt="" class="2xl:w-256 lg:h-144 w-full h-full">
+                                    <img src="../image/tongthong.png" alt=""
+                                        class="2xl:w-256 lg:h-144 lg:w-full lg:h-full">
                                 </div>
                             </div>
+
+                            <div id="sports" data-tab-content class="">
+                                <div class="py-4 flex-shrink-0 relative">
+                                    <div
+                                        class="absolute left-2 lg:left-8 top-40 lg:top-112 lg:text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <p
+                                        class="absolute pt-32 lg:pt-96 ml-20 lg:ml-36 lg:w-128 text-sm lg:text-4xl text-white font-merriweather">
+                                        Isro launches 104 satellites in a
+                                        single mission to create world record</p>
+                                    <p
+                                        class="absolute pt-44 lg:pt-128 ml-20 lg:ml-36 lg:w-108 lg:text-2xl text-sm text-white ">
+                                        2:30 | By Telegraph</p>
+                                    <img src="../image/tenlua.png" alt=""
+                                        class="2xl:w-256 lg:h-144 lg:w-full lg:h-full">
+                                </div>
+                            </div>
+
+                            <div id="tech" data-tab-content class="">
+                                <div class="py-4 flex-shrink-0 relative">
+                                    <div
+                                        class="absolute left-2 lg:left-8 top-40 lg:top-112 lg:text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <p
+                                        class="absolute pt-32 lg:pt-96 ml-20 lg:ml-36 lg:w-128 text-sm lg:text-4xl text-white font-merriweather">
+                                        Isro launches 104 satellites in a
+                                        single mission to create world record</p>
+                                    <p
+                                        class="absolute pt-44 lg:pt-128 ml-20 lg:ml-36 lg:w-108 lg:text-2xl text-sm text-white ">
+                                        2:30 | By Telegraph</p>
+                                    <img src="../image/tongthong.png" alt=""
+                                        class="2xl:w-256 lg:h-144 lg:w-full lg:h-full">
+                                </div>
+                            </div>
+
+                            <div id="business" data-tab-content class="">
+                                <div class="py-4 flex-shrink-0 relative">
+                                    <div
+                                        class="absolute left-2 lg:left-8 top-40 lg:top-112 lg:text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <p
+                                        class="absolute pt-32 lg:pt-96 ml-20 lg:ml-36 lg:w-128 text-sm lg:text-4xl text-white font-merriweather">
+                                        Isro launches 104 satellites in a
+                                        single mission to create world record</p>
+                                    <p
+                                        class="absolute pt-44 lg:pt-128 ml-20 lg:ml-36 lg:w-108 lg:text-2xl text-sm text-white ">
+                                        2:30 | By Telegraph</p>
+                                    <img src="../image/tenlua.png" alt=""
+                                        class="2xl:w-256 lg:h-144 lg:w-full lg:h-full">
+                                </div>
+                            </div>
+
+                            <div id="auto" data-tab-content class="">
+                                <div class="py-4 flex-shrink-0 relative">
+                                    <div
+                                        class="absolute left-2 lg:left-8 top-40 lg:top-112 lg:text-4xl text-white lg:px-6 lg:py-4 px-4 py-2 border-2 rounded-full border-white">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <p
+                                        class="absolute pt-32 lg:pt-96 ml-20 lg:ml-36 lg:w-128 text-sm lg:text-4xl text-white font-merriweather">
+                                        Isro launches 104 satellites in a
+                                        single mission to create world record</p>
+                                    <p
+                                        class="absolute pt-44 lg:pt-128 ml-20 lg:ml-36 lg:w-108 lg:text-2xl text-sm text-white ">
+                                        2:30 | By Telegraph</p>
+                                    <img src="../image/tongthong.png" alt=""
+                                        class="2xl:w-256 lg:h-144 lg:w-full lg:h-full">
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -608,45 +649,55 @@
 
                     <div class="lg:w-full lg:h-48 relative">
                         <img src="../image/img-sub/img1.png" alt=""
-                            class="absolute w-40 h-36 mt-16 ml-108 md:ml-144 lg:static lg:w-full lg:h-full lg:mx-0 lg:my-0">
-                        <h3 class="text-2xl py-5 font-merriweather"><b>The Intimate Lens of Ed van der Elsken</b></h3>
-                        <p class="text-xl pb-10 w-1/2 lg:w-full">Two European museums are presenting retrospectives
+                            class="absolute w-32 h-32 mt-16 lg:ml-0 md:ml-128 sm:ml-108 vs:ml-52 lg:static lg:w-full lg:h-full lg:mx-0 lg:my-0">
+                        <h3 class="text-lg lg:text-2xl py-5 font-merriweather"><b>The Intimate Lens of Ed van der
+                                Elsken</b></h3>
+                        <p class="text-sm lg:text-xl pb-10 w-1/2 lg:w-full">Two European museums are presenting
+                            retrospectives
                             of a man many consider
                             to be one of the best street photographers of the 20th century.</p>
                     </div>
 
                     <div class="lg:w-full lg:h-48 relative">
                         <img src="../image/img-sub/img2.png" alt=""
-                            class="absolute w-40 h-36 mt-16 ml-108 md:ml-144 lg:static lg:w-full lg:h-full lg:mx-0 lg:my-0">
-                        <h3 class="text-2xl py-5 font-merriweather"><b>Gauging the Art Market’s Health</b></h3>
-                        <p class="text-xl pb-10 w-1/2 lg:w-full">Auctions of Impressionist, modern and Surrealist art
+                            class="absolute w-32 h-32 mt-16 lg:ml-0 md:ml-128 sm:ml-108 vs:ml-52 lg:static lg:w-full lg:h-full lg:mx-0 lg:my-0">
+                        <h3 class="text-lg lg:text-2xl py-5 font-merriweather"><b>Gauging the Art Market’s Health</b>
+                        </h3>
+                        <p class="text-sm lg:text-xl pb-10 w-1/2 lg:w-full">Auctions of Impressionist, modern and
+                            Surrealist art
                             at Sotheby’s and
                             Christie’s will be the first major test of buoyancy since the inauguration in the U.S.</p>
                     </div>
 
                     <div class="lg:w-full lg:h-48 relative">
                         <img src="../image/img-sub/img3.png" alt=""
-                            class="absolute lg:static w-40 h-36 mt-16 ml-108 md:ml-144 lg:w-full lg:h-full lg:mx-0 lg:my-0">
-                        <h3 class="text-2xl py-5 font-merriweather"><b>What happen when you skip breakfast</b></h3>
-                        <p class="text-xl pb-10 w-1/2 lg:w-full">The old saying, ‘Eat breakfast like a king, lunch
+                            class="absolute lg:static w-32 h-32 mt-16 lg:ml-0 md:ml-128 sm:ml-108 vs:ml-52 lg:w-full lg:h-full lg:mx-0 lg:my-0">
+                        <h3 class="text-lg lg:text-2xl py-5 font-merriweather"><b>What happen when you skip
+                                breakfast</b></h3>
+                        <p class="text-sm lg:text-xl pb-10 w-1/2 lg:w-full">The old saying, ‘Eat breakfast like a king,
+                            lunch
                             like a prince and dinner
                             like a pauper’ couldn’t ring truer. Beginning your day with a heavy breakfast.</p>
                     </div>
 
                     <div class="lg:w-full lg:h-48 relative">
                         <img src="../image/img-sub/img4.png" alt=""
-                            class="absolute lg:static w-40 h-36 mt-16 ml-108 md:ml-144 lg:w-full lg:h-full lg:mx-0 lg:my-0">
-                        <h3 class="text-2xl py-5 font-merriweather"><b>In London, the Rise of Old-Fashioned </b></h3>
-                        <p class="text-xl pb-10 w-1/2 lg:w-full">Two European museums are presenting retrospectives
+                            class="absolute lg:static w-32 h-32 mt-16 lg:ml-0 md:ml-128 sm:ml-108 vs:ml-52 lg:w-full lg:h-full lg:mx-0 lg:my-0">
+                        <h3 class="text-lg lg:text-2xl py-5 font-merriweather"><b>In London, the Rise of Old-Fashioned
+                            </b></h3>
+                        <p class="text-sm lg:text-xl pb-10 w-1/2 lg:w-full">Two European museums are presenting
+                            retrospectives
                             of a man many consider
                             to be one of the best street photographers of the 20th century.</p>
                     </div>
 
                     <div class="lg:w-full lg:h-48 relative">
                         <img src="../image/img-sub/img5.png" alt=""
-                            class="absolute lg:static w-40 h-36 mt-16 ml-108 md:ml-144 lg:w-full lg:h-full lg:mx-0 lg:my-0">
-                        <h3 class="text-2xl py-5 font-merriweather"><b>T6 myths about keeping an aquarium</b></h3>
-                        <p class="text-xl pb-10 w-1/2 lg:w-full">Keeping fish in aquariums is a hobby which is quite
+                            class="absolute lg:static w-32 h-32 mt-16 lg:ml-0 md:ml-128 sm:ml-108 vs:ml-52 lg:w-full lg:h-full lg:mx-0 lg:my-0">
+                        <h3 class="text-lg lg:text-2xl py-5 font-merriweather"><b>T6 myths about keeping an aquarium</b>
+                        </h3>
+                        <p class="text-sm lg:text-xl pb-10 w-1/2 lg:w-full">Keeping fish in aquariums is a hobby which
+                            is quite
                             common. People are
                             often very apprehensive about keeping fish and having an aquarium.</p>
                     </div>
@@ -724,34 +775,39 @@
 
     <footer>
         <div class="lg:px-16 lg-mt-6 w-full font-roboto">
+
             <div
                 class="relative inline-flex w-full text-center lg:px-5 lg:py-3 border-t border-b lg:border-b-0 border-gray-300  ">
-                <div class="px-8 text-gray mt-12 pt-2 lg:mt-0 text-center w-full lg:w-auto absolute lg:static"><i
-                        class="fa-solid fa-copyright"></i><b> 2017 The Telegraph Company </b></div>
-                <div class="flex overflow-auto py-2 lg:w-auto">
-                    <div class="px-4 text-gray                               flex-shrink-0 w-1/4 lg:w-auto"> Contact
+
+                <div class="px-8 text-gray mt-12 pt-2 lg:mt-0 text-center w-full lg:w-auto absolute lg:static">
+                    <i class="fa-solid fa-copyright"></i><b> 2017 The Telegraph Company </b>
+                </div>
+
+                <div class="inline-flex justify-between py-2 lg:w-auto">
+
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray                                lg:w-auto"> Contact
                         Us</div>
-                    <div class="px-4 text-gray lg:border-l border-gray-300 flex-shrink-0 w-1/4 lg:w-auto">Work With
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray lg:border-l border-gray-300 lg:w-auto">Work With
                         Us</div>
-                    <div class="px-4 text-gray lg:border-l border-gray-300 flex-shrink-0 w-1/4 lg:w-auto">Advertise
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray lg:border-l border-gray-300 lg:w-auto">Advertise
                     </div>
-                    <div class="px-4 text-gray lg:border-l border-gray-300 flex-shrink-0 w-1/4 lg:w-auto">Your Ad
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray lg:border-l border-gray-300 lg:w-auto">Your Ad
                         Choices</div>
-                    <div class="px-4 text-gray lg:border-l border-gray-300 flex-shrink-0 w-1/4 lg:w-auto">Privacy
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray hidden lg:block lg:border-l border-gray-300 lg:w-auto">Privacy
                     </div>
-                    <div class="px-4 text-gray lg:border-l border-gray-300 flex-shrink-0 w-1/4 lg:w-auto">Terms of
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray hidden lg:block lg:border-l border-gray-300 lg:w-auto">Terms of
                         Sale</div>
-                    <div class="px-4 text-gray lg:border-l border-gray-300 flex-shrink-0 w-1/4 lg:w-auto">Site
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray hidden lg:block lg:border-l border-gray-300 lg:w-auto">Site
                         Information</div>
-                    <div class="px-4 text-gray lg:border-l border-gray-300 flex-shrink-0 w-1/4 lg:w-auto">Navigation
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray hidden lg:block lg:border-l border-gray-300 lg:w-auto">Navigation
                     </div>
-                    <div class="px-4 text-gray lg:border-l border-gray-300 flex-shrink-0 w-1/4 lg:w-auto">Site Map
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray hidden lg:block lg:border-l border-gray-300 lg:w-auto">Site Map
                     </div>
-                    <div class="px-4 text-gray lg:border-l border-gray-300 flex-shrink-0 w-1/4 lg:w-auto">HelpSite
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray hidden lg:block lg:border-l border-gray-300 lg:w-auto">HelpSite
                     </div>
-                    <div class="px-4 text-gray lg:border-l border-gray-300 flex-shrink-0 w-1/4 lg:w-auto">Feedback
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray hidden lg:block lg:border-l border-gray-300 lg:w-auto">Feedback
                     </div>
-                    <div class="px-4 text-gray lg:border-l border-gray-300 flex-shrink-0 w-1/4 lg:w-auto">
+                    <div class="px-2 lg:px-4 text-sm lg:text-xl text-gray hidden lg:block lg:border-l border-gray-300 lg:w-auto">
                         Subscriptions</div>
                 </div>
             </div>
@@ -790,6 +846,7 @@
                 extend: {
 
                     spacing: {
+                        '76': '19rem',
                         '88': '22rem',
                         '100': '25rem',
                         '108': '27rem',
