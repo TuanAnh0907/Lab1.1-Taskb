@@ -1,6 +1,6 @@
 # Bài tập Trainee Colombo 2022
 
-## Parse XML
+## Cắt giao diện web tin tức bằng tailwindcss
 
 Cắt giao diện làm quen với scss, tailwind và bố cục web
 
